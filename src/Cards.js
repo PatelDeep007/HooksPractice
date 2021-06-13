@@ -29,7 +29,7 @@ const onFavoriteChange=(id,item)=>{
 
 
 const getArray=JSON.parse(localStorage.getItem('Favorites') || 0);
-useEffect((getArray)=>{
+useEffect((getArray=getArray)=>{
 	if(getArray!==0){
 		setFavorites([...getArray])
 	}
