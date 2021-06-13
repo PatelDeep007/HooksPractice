@@ -33,7 +33,9 @@ useEffect(()=>{
 	if(getArray!==0){
 		setFavorites([...getArray])
 	}
-},[getArray])
+},
+	  eslint-disable-next-line react-hooks/exhaustive-deps
+	  [])
 	
 
 
